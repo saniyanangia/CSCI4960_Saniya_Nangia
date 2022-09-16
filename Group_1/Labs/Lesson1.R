@@ -12,7 +12,7 @@ help("Boston") #documentation of df
 head(Boston) #first 6 rows of df
 dim(Boston) #dimentions of df
 names(Boston) #column headers
-nrow(Boston) #number of columns
+nrow(Boston) #number of rows
 ncol(Boston) #number of columns
 str(Boston) #should run this every time you get a new df --> structure of df
 summary(Boston) #summary statistics
