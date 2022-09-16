@@ -35,7 +35,7 @@ qqline(x)
 
 # DALY Distribution
 
-DALY = as.numeric(DALY) #data_2010EPI$EPI
+DALY = as.numeric(DALY) #data_2010EPI$DALY
 tf = is.na(DALY)
 E = DALY[!tf]
 DALY
@@ -59,7 +59,7 @@ qqline(x)
 
 # WATER_H Distribution
 
-WATER_H = as.numeric(WATER_H) #data_2010EPI$EPI
+WATER_H = as.numeric(WATER_H) #data_2010EPI$WATER_H
 tf = is.na(WATER_H)
 E = WATER_H[!tf]
 WATER_H
@@ -81,7 +81,7 @@ qqplot(qt(ppoints(250), df = 5), x, xlab = "Q-Q plot for t dsn")
 qqline(x)
 
 
-#Comparing Distributions
+# Comparing Distributions
 
 boxplot(EPI,DALY)
 boxplot(EPI,WATER_H)
@@ -92,10 +92,10 @@ qqplot(EPI,WATER_H)
 qqplot(DALY,WATER_H)
 
 
-#Exercise 2
+# Exercise 2
 
 
-#Landlock Filtering
+# Landlock Filtering
 
 EPILand = EPI[!Landlock]
 Eland = EPILand[!is.na(EPILand)]
@@ -120,7 +120,7 @@ qqplot(qt(ppoints(250), df = 5), x, xlab = "Q-Q plot for t dsn")
 qqline(x)
 
 
-#No Surface Water Filtering
+# No Surface Water Filtering
 
 EPISWater = EPI[!No_surface_water]
 ESWater = EPISWater[!is.na(EPISWater)]
@@ -145,7 +145,7 @@ qqplot(qt(ppoints(250), df = 5), x, xlab = "Q-Q plot for t dsn")
 qqline(x)
 
 
-#Desert Filtering
+# Desert Filtering
 
 EPIDesert = EPI[!Desert]
 EDesert = EPIDesert[!is.na(EPIDesert)]
@@ -170,7 +170,7 @@ qqplot(qt(ppoints(250), df = 5), x, xlab = "Q-Q plot for t dsn")
 qqline(x)
 
 
-#High Population Density Filtering
+# High Population Density Filtering
 
 EPIHPD = EPI[!High_Population_Density]
 EHPD = EPIHPD[!is.na(EPIHPD)]
@@ -195,14 +195,12 @@ qqplot(qt(ppoints(250), df = 5), x, xlab = "Q-Q plot for t dsn")
 qqline(x)
 
 
-#Filtering on EPI Regions
+# Filtering on EPI Regions
 
 EPI_South_Asia = EPI[EPI_regions == "South Asia"]
 EPI_South_Asia
 
 
-#Filtering on GEO Subregions
+# Filtering on GEO Subregions
 EPI_Caribbean = EPI[GEO_subregion == "Caribbean"]
 EPI_Caribbean
-
-
