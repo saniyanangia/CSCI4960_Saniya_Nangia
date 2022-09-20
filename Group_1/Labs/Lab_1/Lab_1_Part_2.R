@@ -11,40 +11,31 @@ attach(data_2010EPI)
 fix(data_2010EPI)
 
 EPI = as.numeric(EPI) #data_2010EPI$EPI
-tf = is.na(EPI)
-E = EPI[!tf]
+EPI = EPI[!is.na(EPI)]
 
 DALY = as.numeric(DALY) #data_2010EPI$DALY
-tf = is.na(DALY)
-E = DALY[!tf]
+DALY = DALY[!is.na(DALY)]
 
 WATER_H = as.numeric(WATER_H) #data_2010EPI$WATER_H
-tf = is.na(WATER_H)
-E = WATER_H[!tf]
+WATER_H = WATER_H[!is.na(WATER_H)]
 
 ENVHEALTH = as.numeric(ENVHEALTH) #data_2010EPI$ENVHEALTH
-tf = is.na(ENVHEALTH)
-E = ENVHEALTH[!tf]
+ENVHEALTH = ENVHEALTH[!is.na(ENVHEALTH)]
 
 ECOSYSTEM = as.numeric(ECOSYSTEM) #data_2010EPI$ECOSYSTEM
-tf = is.na(ECOSYSTEM)
-E = ECOSYSTEM[!tf]
+ECOSYSTEM = ECOSYSTEM[!is.na(ECOSYSTEM)]
 
 AIR_H = as.numeric(AIR_H) #data_2010EPI$AIR_H
-tf = is.na(AIR_H)
-E = AIR_H[!tf]
+AIR_H = AIR_H[!is.na(AIR_H)]
 
 AIR_E = as.numeric(AIR_E) #data_2010EPI$AIR_E
-tf = is.na(AIR_E)
-E = AIR_E[!tf]
+AIR_E = AIR_E[!is.na(AIR_E)]
 
 WATER_E = as.numeric(WATER_E) #data_2010EPI$WATER_E
-tf = is.na(WATER_E)
-E = WATER_E[!tf]
+WATER_E = WATER_E[!is.na(WATER_E)]
 
 BIODIVERSITY = as.numeric(BIODIVERSITY) #data_2010EPI$BIODIVERSITY
-tf = is.na(BIODIVERSITY)
-E = BIODIVERSITY[!tf]
+BIODIVERSITY = BIODIVERSITY[!is.na(BIODIVERSITY)]
 
 # Comparing Distributions
 qqplot(EPI, ENVHEALTH)
