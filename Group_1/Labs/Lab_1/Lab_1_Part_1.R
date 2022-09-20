@@ -1,7 +1,9 @@
 # Exercise 1
 
 data_2010EPI = read.csv("/Users/saniyanangia/Desktop/CSCI_4960_Data_Analytics/DA_Files/EPI/2010EPI_data.csv", na.string = "NA", stringsAsFactors=FALSE)
-names(data_2010EPI) = as.matrix(data_2010EPI[1, ])
+#names(data_2010EPI) <- as.matrix(data_2010EPI[1, ])
+#data_2010EPI <- data_2010EPI[-1, ]
+#data_2010EPI[] <- lapply(data_2010EPI, function(x) type.convert(as.character(x)))
 data_2010EPI = data_2010EPI[-1, ]
 #data_2010EPI = lapply(data_2010EPI, function(x) replace(x, is.na(x), 0))
 View(data_2010EPI)
