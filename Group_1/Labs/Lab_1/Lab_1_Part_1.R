@@ -14,8 +14,7 @@ fix(data_2010EPI)
 # EPI Distribution
 
 EPI = as.numeric(EPI) #data_2010EPI$EPI
-tf = is.na(EPI)
-E = EPI[!tf]
+EPI = EPI[!is.na(EPI)]
 EPI
 summary(EPI)
 fivenum(EPI, na.rm = TRUE)
@@ -38,8 +37,7 @@ qqline(x)
 # DALY Distribution
 
 DALY = as.numeric(DALY) #data_2010EPI$DALY
-tf = is.na(DALY)
-E = DALY[!tf]
+DALY = DALY[!is.na(DALY)]
 DALY
 summary(DALY)
 fivenum(DALY, na.rm = TRUE)
@@ -62,8 +60,7 @@ qqline(x)
 # WATER_H Distribution
 
 WATER_H = as.numeric(WATER_H) #data_2010EPI$WATER_H
-tf = is.na(WATER_H)
-E = WATER_H[!tf]
+WATER_H = WATER_H[!is.na(WATER_H)]
 WATER_H
 summary(WATER_H)
 fivenum(WATER_H, na.rm = TRUE)
