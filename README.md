@@ -1,17 +1,24 @@
 # CSCI4960_Saniya_Nangia
 
-Week 1 - 2:
+Group 1:
 
-[Lesson 1](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/blob/main/Group_1/Labs/Lesson1.R)
-
-[Lesson 2](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/blob/main/Group_1/Labs/Lesson2.R)
+[Labs](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/tree/main/Group_1/Labs)
 
 
 
-Week 2:
+Group 2:
 
-[Lab 1 Part 1](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/blob/main/Group_1/Labs/Lab_1/Lab_1_Part_1.R)
+[In-Class Work](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/tree/main/Group_2/In-Class_Work)
 
-[Lab 1 Part 1 Plots](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/tree/main/Group_1/Labs/Lab_1/Part1_Exercise1_Plots)
+[Labs](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/tree/main/Group_2/Labs)
 
-[Lab 1 Part 2](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/blob/main/Group_1/Labs/Lab_1/Lab_1_Part_2.R)
+
+
+Group 3:
+
+[In-Class Work](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/tree/main/Group_3/In-Class_Work)
+
+[Labs](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/tree/main/Group_3/Labs)
+
+
+
