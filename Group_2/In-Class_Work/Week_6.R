@@ -23,14 +23,23 @@ aba = abalone
 aba$sex = NULL
 
 #normalise the data using min max normalisation
-normalise = function(x) {return((x-min(x))/(max(x)-min(x)))}
+aba$length = as.numeric(aba$length)
+aba$diameter = as.numeric(aba$diameter)
+aba$height = as.numeric(aba$height)
+aba$whole_weight = as.numeric(aba$whole_weight)
+aba$shucked_weight = as.numeric(aba$shucked_weight)
+aba$viscera_weight = as.numeric(aba$viscera_weight)
+aba$shell_weight = as.numeric(aba$shell_weight)
+aba = na.omit(aba)
+
+normalise = function(x) {return ((x - min(x)) / (max(x) - min(x)))}
 aba[1:7] = as.data.frame(lapply(aba[1:7], normalise))
 summary(aba$shucked_weight)
 #After normalisation, each variable has a min of 0 and a max of 1 (range from 0 to 1)
 
 #Split data into training and testing sets
 ind = sample(2, nrow(aba), replace = TRUE, prob = c(0.7, 0.3))
-KNN = aba[ind == 1,]
+KNNtrain = aba[ind == 1,]
 KNNtest = aba[ind == 2,]
 nrow(KNN)
 sqrt(2950)
@@ -69,9 +78,9 @@ k.max = 12
 #tot.withinss = total within-cluster sum of squares
 #iter.max = maximum number of iterations allowed
 #nstart = if centers is a number, how many random sets should be chosen
-wss = sapply(1:k.max, function(k){kmeans(iris[,3:4], k, nstart = 20, iter.max = 20)$tot.withinss})
+wss = sapply(1:k.max, function(k) {kmeans(iris[,3:4], k, nstart = 20, iter.max = 1000)$tot.withinss})
 wss # within sum of squares
-plot(1:k.max, wss, type = 'b', xlab = 'Number of clusters(k)', ylab = 'Within cluster cum of squares')
+plot(1:k.max, wss, type="b", xlab="Number of clusters(k)", ylab="Within cluster sum of squares") 
 icluster = kmeans(iris[,3:4], 3, nstart = 20)
 table(icluster$cluster, iris$Species)
 
