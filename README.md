@@ -24,4 +24,6 @@ Group 3:
 
 Group 4:
 
+[In-Class Work](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/tree/main/Group_4/In-Class_Work)
+
 [Labs](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/tree/main/Group_4/Labs)
