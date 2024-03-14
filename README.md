@@ -1,5 +1,3 @@
-# CSCI4960_Saniya_Nangia
-
 Group 1:
 
 [Labs](https://github.com/saniyanangia/DataAnalyticsFall2022_Saniya_Nangia/tree/main/Group_1/Labs)
